@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register, Login & Game</title>
+  <link rel="stylesheet" href="code.css">
+</head>
+<body>
+
+  <!-- REGISTER PAGE -->
+  <div class="box active" id="registerBox">
+    <h2>Register</h2>
+
+    <input type="text" id="regName" placeholder="Enter Name">
+    <div class="error" id="nameError"></div>
+
+    <input type="email" id="regEmail" placeholder="Enter Email">
+    <div class="error" id="emailError"></div>
+
+    <input type="password" id="regPassword" placeholder="Enter Password">
+    <div class="error" id="passwordError"></div>
+
+    <button onclick="register()">Register</button>
+    <a onclick="showLogin()">Already have an account? Login</a>
+  </div>
+
+  <!-- LOGIN PAGE -->
+  <div class="box" id="loginBox">
+    <h2>Login</h2>
+
+    <input type="email" id="loginEmail" placeholder="Enter Email">
+    <div class="error" id="loginEmailError"></div>
+
+    <input type="password" id="loginPassword" placeholder="Enter Password">
+    <div class="error" id="loginPasswordError"></div>
+
+    <button onclick="login()">Login</button>
+    <a onclick="showRegister()">Create New Account</a>
+  </div>
+
+  <!-- WELCOME PAGE -->
+  <div class="box" id="welcomeBox">
+    <h2>Welcome, <span id="username"></span>!</h2>
+    <p>You are successfully logged in.</p>
+
+    <button onclick="startGame()">Start Game</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <!-- GAME PAGE -->
+  <div class="box" id="gameBox">
+    <h2>Stone • Paper • Scissors</h2>
+
+    <!-- Mode Selection -->
+    <div id="modeSelect">
+      <button onclick="setMode('friend')">Play With Friend</button>
+      <button onclick="setMode('cpu')">Play With System</button>
+    </div>
+
+    <!-- Game Area -->
+    <div id="gameArea" style="display:none;">
+      <h3 id="turnMsg">Player 1: Choose your move</h3>
+
+      <div class="choices">
+        <button onclick="playerMove('Stone')">🪨 Stone</button>
+        <button onclick="playerMove('Paper')">📄 Paper</button>
+        <button onclick="playerMove('Scissors')">✂️ Scissors</button>
+      </div>
+
+      <p id="playerChoice"></p>
+      <p id="cpuChoice"></p>
+      <p id="result"></p>
+
+      <button onclick="resetGame()">Play Again</button>
+      <button onclick="exitGame()">Exit Game</button>
+    </div>
+  </div>
+
+<script src="code.js"></script>
+</body>
+</html>

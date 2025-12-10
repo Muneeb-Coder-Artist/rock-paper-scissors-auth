@@ -1,0 +1,84 @@
+body {
+  font-family: Arial;
+  background: #eef2f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  background: #fff;
+  padding: 25px;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ccc;
+  display: none;
+  text-align: center;
+}
+
+.active {
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input.invalid {
+  border-color: red;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: seagreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: seagreen;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* GAME STYLING */
+#modeSelect button {
+  background: #4a90e2;
+}
+
+.choices button {
+  width: 100px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
