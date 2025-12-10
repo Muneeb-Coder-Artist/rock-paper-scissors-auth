@@ -16,3 +16,22 @@ This is a web-based **Rock-Paper-Scissors** game that includes **user registrati
 1. Clone the repository:
 ```bash
 git clone https://github.com/YOUR_USERNAME/rock-paper-scissors-auth.git
+```
+2. Open index.html in your browser.
+Enjoy the game!
+
+## Features
+- Frontend-only implementation
+- Strong password validation
+- Friendly UI with active highlights for boxes
+- Two game modes: CPU & Friend
+
+## Tech Stack
+
+- HTML
+- CSS
+- JavaScript (Vanilla)
+
+## Author
+
+Muneeb Ur Rehman
